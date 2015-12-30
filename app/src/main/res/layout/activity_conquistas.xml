@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="br.com.ufpb.pmi.learningtruetable.view.ConquistasActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toolbar_conquistas"
+            android:background="?attr/colorPrimary"
+            app:theme="@style/AppTheme.PopupOverlay"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <br.com.ufpb.pmi.learningtruetable.custom.RobotoLightTypeface
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Maior Pontuação"
+                android:gravity="center"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:textSize="@dimen/body_1"/>
+
+            <br.com.ufpb.pmi.learningtruetable.custom.RobotoBoldTypeface
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:id="@+id/pontuacao_max"
+                android:layout_margin="8dp"
+                android:textSize="@dimen/display_1"
+                android:gravity="center"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="64dp"
+                android:layout_marginLeft="64dp"
+                android:background="@color/md_grey_500_50"
+                android:layout_height="2dp"/>
+
+            <br.com.ufpb.pmi.learningtruetable.custom.RobotoLightTypeface
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exercícios"
+                android:gravity="center"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:textSize="@dimen/body_1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <br.com.ufpb.pmi.learningtruetable.custom.RobotoBoldTypeface
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:id="@+id/cont_atividades"
+                    android:layout_margin="8dp"
+                    android:textSize="@dimen/display_1"
+                    android:gravity="center"/>
+
+                <br.com.ufpb.pmi.learningtruetable.custom.RobotoBoldTypeface
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" / 20"
+                    android:layout_margin="8dp"
+                    android:textSize="@dimen/display_1"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.github.rahatarmanahmed.cpv.CircularProgressView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/progress_view"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cpv_animAutostart="true"
+                app:cpv_thickness="8dp"
+                app:cpv_indeterminate="false" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_trofeu"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/imageView" />
+
+            <br.com.ufpb.pmi.learningtruetable.custom.JamoerRoughTypeface
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20%"
+                android:id="@+id/porcentagem_jogo"
+                android:textSize="@dimen/headline"
+                android:layout_margin="8dp"
+                android:textColor="@color/md_grey_700"
+                android:layout_below="@+id/imageView"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

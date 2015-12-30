@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Learning TrueTable</string>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_about">Sobre</string>
+    <string name="title_activity_achiviments">Conquistas</string>
+    <string name="title_activity_praticar">Praticar</string>
+
+    <string name="title_dialog">Dica</string>
+
+</resources>

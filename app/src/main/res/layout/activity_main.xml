@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:scrollbars="vertical"
+    android:orientation="vertical"
+    tools:context="br.com.ufpb.pmi.learningtruetable.view.MainActivity">
+
+    <br.com.ufpb.pmi.learningtruetable.custom.JamoerRoughTypeface
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="@dimen/display_2"
+        android:textColor="@color/md_text"
+        android:gravity="start"
+        android:layout_margin="@dimen/activity_horizontal_margin" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:id="@+id/btn_aprender"
+            android:background="?attr/selectableItemBackground"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:id="@+id/img_aprender"
+                android:src="@drawable/ic_aprender"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                />
+
+            <br.com.ufpb.pmi.learningtruetable.custom.RobotoLightTypeface
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aprender"
+                android:layout_gravity="center"
+                android:textSize="@dimen/body_1"
+                android:textColor="@color/md_text"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:id="@+id/btn_exercicio"
+            android:background="?attr/selectableItemBackground"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:id="@+id/img_exercicio"
+                android:src="@drawable/ic_exercicios"
+                android:layout_margin="@dimen/activity_horizontal_margin"/>
+
+            <br.com.ufpb.pmi.learningtruetable.custom.RobotoLightTypeface
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Praticar"
+                android:layout_gravity="center"
+                android:textSize="@dimen/body_1"
+                android:textColor="@color/md_text"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_sair"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:id="@+id/img_sair"
+                android:src="@drawable/ic_exit"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                />
+
+            <br.com.ufpb.pmi.learningtruetable.custom.RobotoLightTypeface
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sair"
+                android:layout_gravity="center"
+                android:textSize="@dimen/body_1"
+                android:textColor="@color/md_text"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/btn_pontuacao"
+            android:src="@drawable/ic_trophy_grey600_48dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/btn_about"
+            android:src="@drawable/ic_launcher"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:clickable="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/btn_settings"
+            android:src="@drawable/ic_settings_grey600_48dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="4dp"
+            android:clickable="true"
+            android:layout_marginBottom="4dp"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+    </LinearLayout>
+
+</LinearLayout>

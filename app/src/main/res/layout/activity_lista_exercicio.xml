@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="br.com.ufpb.pmi.learningtruetable.view.ListaExercicioActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toolbar_list_exercicios"
+            android:background="?attr/colorPrimary"
+            app:theme="@style/AppTheme.PopupOverlay"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:text="AND"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:textSize="@dimen/button"
+            android:elevation="@dimen/elevation_raised_button"
+            android:id="@+id/list_and"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:text="NOT"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:textSize="@dimen/button"
+            android:elevation="@dimen/elevation_raised_button"
+            android:id="@+id/list_not"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:text="OR"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:textSize="@dimen/button"
+            android:elevation="@dimen/elevation_raised_button"
+            android:id="@+id/list_or"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:text="TODAS"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:textSize="@dimen/button"
+            android:elevation="@dimen/elevation_raised_button"
+            android:id="@+id/list_all"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:id="@+id/recyclerViewList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical|none"/>
+
+</LinearLayout>

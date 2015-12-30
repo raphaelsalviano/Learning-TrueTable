@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.com.ufpb.pmi.learningtruetable.view.PraticasActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_praticas"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:theme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="256dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <br.com.ufpb.pmi.learningtruetable.custom.RobotoLightTypeface
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/title_P"
+                android:text="AND"
+                android:textColor="@color/md_text"
+                android:textStyle="bold"
+                android:textSize="@dimen/headline" />
+
+            <ImageView
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:id="@+id/image_praticle"
+                android:layout_margin="@dimen/activity_horizontal_margin"/>
+
+            <br.com.ufpb.pmi.learningtruetable.custom.RobotoBoldTypeface
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/formula"
+                android:gravity="center"
+                android:text="A ^ B  ?"
+                android:textColor="@color/md_secondary_text_icons"
+                android:textSize="@dimen/headline"/>
+
+            <Button
+                android:layout_width="128dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:text="SUBMETER"
+                android:id="@+id/btn_submeter"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:animateLayoutChanges="@bool/cpv_default_anim_autostart"
+                android:divider="@color/md_divider"
+                android:stretchColumns="2">
+
+                <TableRow>
+
+                    <br.com.ufpb.pmi.learningtruetable.custom.RobotoLightTypeface
+                        android:layout_column="1"
+                        android:id="@+id/TextColun1"
+                        android:text="A"
+                        android:textSize="@dimen/title"
+                        android:textColor="@color/md_text"
+                        android:gravity="center"
+                        android:layout_gravity="center"/>
+
+                    <br.com.ufpb.pmi.learningtruetable.custom.RobotoLightTypeface
+                        android:layout_column="2"
+                        android:id="@+id/TextColun2"
+                        android:text="B"
+                        android:textSize="@dimen/title"
+                        android:textColor="@color/md_text"
+                        android:gravity="center"
+                        android:layout_gravity="center"/>
+
+                    <br.com.ufpb.pmi.learningtruetable.custom.RobotoLightTypeface
+                        android:layout_column="3"
+                        android:id="@+id/TextColun3"
+                        android:text="A ^ B"
+                        android:textSize="@dimen/title"
+                        android:textColor="@color/md_text"
+                        android:gravity="center"
+                        android:layout_gravity="center"/>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <br.com.ufpb.pmi.learningtruetable.custom.RobotoLightTypeface
+                        android:layout_column="1"
+                        android:id="@+id/editColun1_1"
+                        android:text="0"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/title"
+                        />
+
+                    <br.com.ufpb.pmi.learningtruetable.custom.RobotoLightTypeface
+                        android:layout_column="2"
+                        android:id="@+id/editColun2_1"
+                        android:text="0"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/title"
+                        />
+
+                    <EditText
+                        android:layout_column="3"
+                        android:id="@+id/editColun3_1"
+                        android:hint="0 ou 1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/title"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <br.com.ufpb.pmi.learningtruetable.custom.RobotoLightTypeface
+                        android:layout_column="1"
+                        android:id="@+id/editColun1_2"
+                        android:text="0"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/title"
+                        />
+
+                    <br.com.ufpb.pmi.learningtruetable.custom.RobotoLightTypeface
+                        android:layout_column="2"
+                        android:id="@+id/editColun2_2"
+                        android:hint="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/title"
+                        />
+
+                    <EditText
+                        android:layout_column="3"
+                        android:id="@+id/editColun3_2"
+                        android:hint="0 ou 1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/title"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <br.com.ufpb.pmi.learningtruetable.custom.RobotoLightTypeface
+                        android:layout_column="1"
+                        android:id="@+id/editColun1_3"
+                        android:hint="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/title"
+                        />
+
+                    <br.com.ufpb.pmi.learningtruetable.custom.RobotoLightTypeface
+                        android:layout_column="2"
+                        android:id="@+id/editColun2_3"
+                        android:text="0"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/title"
+                        />
+
+                    <EditText
+                        android:layout_column="3"
+                        android:id="@+id/editColun3_3"
+                        android:hint="0 ou 1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/title"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <br.com.ufpb.pmi.learningtruetable.custom.RobotoLightTypeface
+                        android:layout_column="1"
+                        android:id="@+id/editColun1_4"
+                        android:text="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/title"
+                        />
+
+                    <br.com.ufpb.pmi.learningtruetable.custom.RobotoLightTypeface
+                        android:layout_column="2"
+                        android:id="@+id/editColun2_4"
+                        android:hint="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/title"
+                        />
+
+                    <EditText
+                        android:layout_column="3"
+                        android:id="@+id/editColun3_4"
+                        android:hint="0 ou 1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/title"
+                        />
+
+                </TableRow>
+
+            </TableLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

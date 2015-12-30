@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="br.com.ufpb.pmi.learningtruetable.view.SobreActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toolbar_about"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/AppTheme.PopupOverlay"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <br.com.ufpb.pmi.learningtruetable.custom.JamoerRoughTypeface
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="@dimen/display_2"
+        android:textColor="@color/md_text"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+    <br.com.ufpb.pmi.learningtruetable.custom.RobotoLightTypeface
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="por Augusto Felix, Ittalo Pessoa e Raphael Salviano"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="24dp"
+        android:gravity="center"
+        android:textColor="@color/md_text"
+        android:textSize="@dimen/subhead"/>
+
+    <br.com.ufpb.pmi.learningtruetable.custom.RobotoLightTypeface
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textSize="@dimen/title"
+        android:gravity="center"
+        android:textColor="@color/md_text"
+        android:text="Versão: 0.86.2"/>
+
+    <br.com.ufpb.pmi.learningtruetable.custom.RobotoLightTypeface
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textSize="@dimen/subhead"
+        android:textColor="@color/md_text"
+        android:gravity="center"
+        android:text="Produção de Materiais Instrucionais"/>
+
+    <br.com.ufpb.pmi.learningtruetable.custom.RobotoLightTypeface
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="@dimen/subhead"
+        android:textColor="@color/md_text"
+        android:gravity="center"
+        android:text="Flávia Veloso"/>
+
+
+    <br.com.ufpb.pmi.learningtruetable.custom.RobotoLightTypeface
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textSize="@dimen/subhead"
+        android:textColor="@color/md_text"
+        android:gravity="center"
+        android:text="UFPB - Campus IV - LN"/>
+
+</LinearLayout>
